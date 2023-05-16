@@ -1,0 +1,57 @@
+form {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h1 {
+
+}
+
+fieldset {
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+   width: 150px;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 14px; 
+}
+
+li {
+    color: rgba(66, 66, 71, 0.473);
+}
+
+.price {
+    color: rgb(20, 20, 216);
+    font-weight: 600;
+}
+
+.wrapper {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 400px;
+}
+
+.form__button {
+    width: 200px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.form__summary {
+    float: right;
+    color: rgb(20, 20, 216)
+}
