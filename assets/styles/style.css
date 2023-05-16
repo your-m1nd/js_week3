@@ -5,10 +5,6 @@ form {
     align-items: flex-start;
 }
 
-h1 {
-
-}
-
 fieldset {
     width: 800px;
     display: flex;
