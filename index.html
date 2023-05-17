@@ -9,61 +9,78 @@
   </head>
   <body>
     <form class="basket">
-      <h1>Корзина</h1>
-      <fieldset class="item-1">
-        <div><img src="assets/images/jacket.jpg" /></div>
-        <div>
-          <ul>
+      <h1 class="basket__title">Корзина</h1>
+      <fieldset class="item">
+        <div class="item__wrapper">
+          <img
+            class="item__image"
+            src="assets/images/jacket.jpg"
+            alt="jacket"
+          />
+          <ul class="item__info">
             RESERVED куртка
-            <li>Цвет: Черный</li>
-            <li>Размер: M</li>
-            <li>Количество: 1</li>
+            <li class="item__list">Цвет: Черный</li>
+            <li class="item__list">Размер: M</li>
+            <li class="item__list">Количество: 1</li>
           </ul>
         </div>
-        <div><p class="price">7999.2 руб.</p></div>
+        <div class="price__wrapper">
+          <p id="priceJacket">9999 руб.</p>
+        </div>
       </fieldset>
-      <fieldset class="item-2">
-        <div><img src="assets/images/sneakers.jpg" /></div>
-        <div>
-          <ul>
+      <fieldset class="item">
+        <div class="item__wrapper">
+          <img
+            class="item__image"
+            src="assets/images/sneakers.jpg"
+            alt="sneakers"
+          />
+          <ul class="item__info">
             Parad кроссовки
-            <li>Цвет: Белый</li>
-            <li>Размер: 39</li>
-            <li>Количество: 1</li>
+            <li class="item__list">Цвет: Белый</li>
+            <li class="item__list">Размер: 39</li>
+            <li class="item__list">Количество: 1</li>
           </ul>
         </div>
-        <div><p class="price">5112 руб.</p></div>
+        <div class="price__wrapper">
+          <p id="priceSneakers">6390 руб.</p>
+        </div>
       </fieldset>
-      <fieldset class="item-3">
-        <div><img src="assets/images/jeans.jpg" /></div>
-        <div>
-          <ul>
+      <fieldset class="item">
+        <div class="item__wrapper">
+          <img class="item__image" src="assets/images/jeans.jpg" alt="jeans" />
+          <ul class="item__info">
             Levi's джинсы
-            <li>Цвет: Синий</li>
-            <li>Размер: L</li>
-            <li>Количество: 1</li>
+            <li class="item__list">Цвет: Синий</li>
+            <li class="item__list">Размер: L</li>
+            <li class="item__list">Количество: 1</li>
           </ul>
         </div>
-        <div><p class="price">9032 руб.</p></div>
+        <div class="price__wrapper">
+          <p id="priceJeans">11290 руб.</p>
+        </div>
       </fieldset>
-      <fieldset class="item-4">
-        <div><img src="assets/images/belt.jpg" /></div>
-        <div>
-          <ul>
+      <fieldset class="item">
+        <div class="item__wrapper">
+          <img class="item__image" src="assets/images/belt.jpg" alt="belt" />
+          <ul class="item__info">
             Rendez-vous ремень
-            <li>Цвет: Черный</li>
-            <li>Размер: 90см</li>
-            <li>Количество: 1</li>
+            <li class="item__list">Цвет: Черный</li>
+            <li class="item__list">Размер: 90см</li>
+            <li class="item__list">Количество: 1</li>
           </ul>
         </div>
-        <div><p class="price">2040 руб.</p></div>
+        <div class="price__wrapper">
+          <p id="priceBelt">2550 руб.</p>
+        </div>
       </fieldset>
-      <div class="wrapper">
-        <button class="form__button" type="submit">
+      <div class="button__wrapper">
+        <button id="btn" type="submit" onclick="newPrice()">
           Использовать купон на 20%
         </button>
         <p class="form__summary">Итого:<span id="total"></span></p>
       </div>
     </form>
+    <script src="script.js"></script>
   </body>
 </html>
